@@ -8,15 +8,17 @@ A repo for some fun python automation scripts.
 This is a bot that plays the game 2048.
 You can play the game [here](https://play2048.co)
 
+![2048 game]()
+
 The bot will automatically open the link and play.
 It will also create a screenshot of the highest score.
 
 ### How to use the script?
 You need
-- WebDriver
+### - WebDriver
 
 Get all info about webdriver installation [here](#Webdriver)
-- Selenium
+### - Selenium
 
 Get all info about selenium installation [here](#Selenium)
 
@@ -32,3 +34,6 @@ You need to download the webdriver from the internet.
 Driver for-
 - Firefox - [here](https://github.com/mozilla/geckodriver/releases)
 - Chrome - [here](https://chromedriver.chromium.org/downloads)
+
+After downloading either place the driver and the script in the same folder.
+Or link the path to the driver in the line `driver = webdriver.Firefox(*your-path-here*)`
