@@ -8,7 +8,7 @@ A repo for some fun python automation scripts.
 This is a bot that plays the game 2048.
 You can play the game [here](https://play2048.co)
 
-![2048 game]()
+![2048 game](https://raw.githubusercontent.com/anantdark/PythonAutomation/main/shot.png)
 
 The bot will automatically open the link and play.
 It will also create a screenshot of the highest score.
