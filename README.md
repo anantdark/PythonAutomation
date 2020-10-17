@@ -2,7 +2,12 @@
 
 A repo for some fun python automation scripts.
 ----------------
+## All pull requests are welcome. Anyone is free to fork, modify and help grow the repo.
 
+## Pull requests will be approved at the earliest within 6 hrs.
+
+## keep contributing to open source. HAPPY CODING.
+---------------------------------
 ## - 2048_bot
 
 This is a bot that plays the game 2048.
@@ -13,7 +18,8 @@ You can play the game [here](https://play2048.co)
 The bot will automatically open the link and play.
 It will also create a screenshot of the highest score.
 
-### How to use the script?
+----------------------------------------
+### How to use the scripts?
 You need
 ### - WebDriver
 
