@@ -6,13 +6,13 @@ import time
 # You can also install any extension in the browser.
 # Just uncomment the below code and change path accordingly.
 
-# extension = '/home/anant/vscode/uBlock0_1.30.5b1.firefox.signed.xpi'
+extension = '/home/anant/vscode/uBlock0_1.30.5b1.firefox.signed.xpi'
 
 #pass in the path of your driver if it is not in the same directory.
 driver = webdriver.Firefox()
-# driver.install_addon(extension, temporary=True)
+driver.install_addon(extension, temporary=True)
 driver.get('https://play2048.co/')
-driver.fullscreen_window()
+# driver.fullscreen_window()
 time.sleep(4)
 html_elem = driver.find_element_by_tag_name('body')
 max_score = 0
@@ -55,3 +55,4 @@ def playbot2():
 for i in range(50):
     playbot1()
     playbot2()
+driver.close()
