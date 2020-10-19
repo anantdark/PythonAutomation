@@ -19,6 +19,27 @@ The bot will automatically open the link and play.
 It will also create a screenshot of the highest score.
 
 ----------------------------------------
+## - Auto Login Bot
+
+This is another python bot that can automatically login to many sites
+Currently supports login to
+- Github
+- Stackoverflow
+- Codechef
+- Amazon
+- Flipkart
+
+Also supports TOTP based login, implemented for github(can be extended).
+
+Passwords are stored in a separate file, and imported directly.
+
+### Deployment:
+
+- Install required modules and webdriver.
+- Create passwords.py file and store all the passwords in a dictionary.(Will add encryption soon)
+- Create Alias to use the scipts efficiently, more about aliases here.
+
+----------------------------------------
 ### How to use the scripts?
 You need
 ### - WebDriver
