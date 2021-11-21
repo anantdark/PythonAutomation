@@ -1,3 +1,5 @@
+#CoDeD By AnAnT
+
 # I stored the passwords in a dictionary in another file named passwords.py
 # from passwords import *
 from selenium import webdriver
@@ -114,3 +116,7 @@ if __name__ == "__main__":
     else:
         print('Sorry this is not supported yet, try later.')
         exit(0)
+
+
+
+
