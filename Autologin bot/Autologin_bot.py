@@ -3,6 +3,7 @@
 # I stored the passwords in a dictionary in another file named passwords.py
 # from passwords import *
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 # from selenium.webdriver.common.action_chains import ActionChains
 import time
@@ -41,16 +42,26 @@ def github():
     # token = driver.find_element_by_id("token").text
     driver.get("https://github.com/login")
     user = 'anantdark'
-    username = driver.find_element_by_id("login_field")
-    password = driver.find_element_by_id("password")
+    username = driver.find_element(By.ID, "login_field")
+    password = driver.find_element(By.ID, "password")
     username.send_keys(user)
     password.send_keys(passcode("github"))
-    driver.find_element_by_name("commit").click()
-    otp_box = driver.find_element_by_xpath('//*[@id="otp"]')
-    otp_box.send_keys(token)
-    driver.find_element_by_xpath("/html/body/div[3]/main/div/div[5]/form/button").click()
+    driver.find_element(By.NAME, "commit").click()
+    # otp_box = driver.find_element_by_xpath('//*[@id="otp"]')
+    # otp_box.send_keys(token)
+    # driver.find_element_by_xpath("/html/body/div[3]/main/div/div[5]/form/button").click()
     fin = input()
     driver.close()
+
+
+def passcode(param):
+    dictemp = {}
+    with open("password.txt", 'r') as files:
+        line = files.readline()
+        templist = line.split()
+        dictemp[templist[0]] = templist[1]
+
+    return dictemp[param]
 
 def codechef():
     chrome_options = Options()
